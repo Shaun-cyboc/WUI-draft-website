@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WUI</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    /* Navbar Container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000000;
+      color: rgb(0, 255, 255);
+    }
+    .navbar .brand {
+      font-size: 1.5em;
+    }
+    /* Hamburger Menu */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background-color: rgb(255, 255, 255);
+      margin: 5px;
+      transition: 0.4s;
+    }
+    /* Navigation Links */
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    .nav-links li {
+      margin: 0 15px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: rgb(4, 255, 242);
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #ddd;
+    }
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 200px;
+        background-color: #494646;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.5s ease-in-out;
+      }
+      .nav-links.show {
+        right: 0;
+      }
+      .nav-links li {
+        margin: 20px 0;
+      }
+      
+      .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+  </style>
+</head>
+<body bgcolor="black">
+
+  
+  <nav class="navbar">
+    <div class="brand"><u>WUI</u></div>
+    
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul class="nav-links" id="nav-links">
+      <li><a href="WUI Navigation Bar.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+  </script>
+  <Font size="23" color="cyan"> 
+    <center><h1><u>WUI</u></h1></center>
+</Font>
+<br/>
+<font color="cyan">
+    <style>
+        body {
+            font-family: 'comic Neue', sans-serif;
+             }
+    </style>
+    </head>
+<h1><u>What is WUI?</u></h1>
+<br/>
+
+<p> WUI is a project that aims at making lives easy through the use of AI since it is a growing factor in this morden day world. WUI also aims at developing games to help develop and enhance brain IQ and mostly for young kids aged from 2-6 years of age as those are the most cruical years for brain development, also, WUI aims at making games that will benefit the old by means of keeping their minds young, fast, creative and innovative.
+     
+    With WUI you are never too young ,neither are you too old. 
+</p>
+<br/>
+<h4>Background infomation of WUI</h4>
+<br/>
+    The founder for the WUI is Shaun Makhosini Nkosi. At the time WUI was founded ,he had recently turned 18 years of age and he was so concerned about the morden games in which the young kids were playing as he saw the advertisements as a bit too much for that age group, eg violent games which led to an increase in violence amoungst the kids. Some kids tenf to want to follow the routes in which they saw in the games such as Gangsterism, but with WUI worry no more as the project is all on brain development and educational purposes. 
+    At the time he founed the project he could not develop not even a sing game or app but he started the project so he can push himself day by day as he had a project and mission to accomplish. He then learnt the programming language known as Python.
+
+
+
+  </font>
+  </font>
+</body>
+</html>

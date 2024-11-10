@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: normal;
+    align-items: normal;
+    text-align: justify;
+    color: rgb(255, 0, 0);
+
+    
+    background-image: url('background.webp');
+    background-size: cover;
+    background-position: normal;
+    background-repeat: no-repeat;
+}
